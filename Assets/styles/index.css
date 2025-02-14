@@ -11,13 +11,13 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Outfit';
   color: var(--color-paragraph);
 }
 .grid{
   display: grid;
   grid-template-rows: 1;
-  grid-template-columns: repeat(3, 350px);
-  
+  grid-template-columns: repeat(3, 300px);
 }
 .grid_item_1{
   background-color: var(--color-orange);
@@ -27,4 +27,50 @@ body{
 }
 .grid_item_3{
   background-color: var(--color-dark-cyan);
+}
+.grid_information{
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 3.6rem;
+}
+.title{
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.paragraph{
+  font-weight: 400;
+}
+.btn_more_orange{
+  background-color: var(--color-white);
+  border-radius: 20px;
+  border: none;
+  margin-top: 5rem;
+  padding: 12px 36px;
+  font-weight: 400;
+  color: var(--color-orange);
+}
+.btn_more_cyan{
+  background-color: var(--color-white);
+  border-radius: 20px;
+  border: none;
+  margin-top: 5rem;
+  padding: 12px 36px;
+  font-weight: 400;
+  color: var(--color-cyan);
+}
+.btn_more_dark{
+  background-color: var(--color-white);
+  border-radius: 20px;
+  border: none;
+  margin-top: 5rem;
+  padding: 12px 36px;
+  font-weight: 400;
+  color: var(--color-dark-cyan);
+}
+.btn:hover{
+  background-color: transparent;
+  border: 2px solid var(--color-white);
+  color: var(--color-white);
+  cursor: pointer;
 }
