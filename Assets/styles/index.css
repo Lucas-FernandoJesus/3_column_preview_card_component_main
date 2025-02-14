@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url("./var.css");
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-paragraph);
+}
+.grid{
+  display: grid;
+  grid-template-rows: 1;
+  grid-template-columns: repeat(3, 350px);
+  
+}
+.grid_item_1{
+  background-color: var(--color-orange);
+}
+.grid_item_2{
+  background-color: var(--color-cyan);
+}
+.grid_item_3{
+  background-color: var(--color-dark-cyan);
+}
