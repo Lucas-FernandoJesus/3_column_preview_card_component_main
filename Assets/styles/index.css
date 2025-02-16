@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @import url("./var.css");
+@import url("./media.css");
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body{
   width: 100vw;
@@ -16,17 +18,18 @@ body{
 }
 .grid{
   display: grid;
-  grid-template-rows: 1;
   grid-template-columns: repeat(3, 300px);
 }
 .grid_item_1{
   background-color: var(--color-orange);
+  border-radius: 8px 0 0 8px;
 }
 .grid_item_2{
   background-color: var(--color-cyan);
 }
 .grid_item_3{
   background-color: var(--color-dark-cyan);
+  border-radius: 0 8px 8px 0;
 }
 .grid_information{
   font-size: 15px;
@@ -41,36 +44,26 @@ body{
 .paragraph{
   font-weight: 400;
 }
-.btn_more_orange{
+.btn{
   background-color: var(--color-white);
   border-radius: 20px;
   border: none;
   margin-top: 5rem;
   padding: 12px 36px;
   font-weight: 400;
-  color: var(--color-orange);
-}
-.btn_more_cyan{
-  background-color: var(--color-white);
-  border-radius: 20px;
-  border: none;
-  margin-top: 5rem;
-  padding: 12px 36px;
-  font-weight: 400;
-  color: var(--color-cyan);
-}
-.btn_more_dark{
-  background-color: var(--color-white);
-  border-radius: 20px;
-  border: none;
-  margin-top: 5rem;
-  padding: 12px 36px;
-  font-weight: 400;
-  color: var(--color-dark-cyan);
 }
 .btn:hover{
   background-color: transparent;
   border: 2px solid var(--color-white);
   color: var(--color-white);
   cursor: pointer;
+}
+.btn_more_orange{
+  color: var(--color-orange);
+}
+.btn_more_cyan{
+  color: var(--color-cyan);
+}
+.btn_more_dark{
+  color: var(--color-dark-cyan);
 }

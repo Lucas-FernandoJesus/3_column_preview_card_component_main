@@ -1,0 +1,23 @@
+@media (min-width: 375px) and (max-width: 500px) {
+  body .grid{
+    margin-top: 22%;
+    height: 100vh;
+    grid-template-columns: repeat(1, 300px);
+  }
+  .grid .grid_item_1{
+    border-radius: 8px 8px 0 0;
+  }
+  .grid .grid_item_3{
+    border-radius: 0 0 8px 8px;
+  }
+  .grid .btn{
+    margin-top: 3rem;
+  }
+}
+/* @media(max-width: 1440px) {
+  body .grid{
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: repeat(3, 250px);
+  }
+} */
